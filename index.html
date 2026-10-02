@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Information Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- HEADER with main heading + nav -->
+        <header>
+            <h1>Department of Information Technology</h1>
+            <div class="dept-sub">Pioneering digital innovation &amp; computing excellence</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN content: sections for description, courses, lab, table, enquiry -->
+        <main>
+            <!-- Department description section -->
+            <section id="home">
+                <h2>About the Department</h2>
+                <p class="dept-description">
+                    The Department of Information Technology is dedicated to shaping the next generation of 
+                    IT professionals, researchers, and innovators. We offer a rigorous curriculum that blends 
+                    theoretical foundations with hands-on experience in artificial intelligence, cybersecurity, 
+                    cloud computing, and software engineering. Our state-of-the-art laboratories and industry 
+                    partnerships provide students with the tools they need to solve real-world problems and 
+                    lead in the digital era.
+                </p>
+            </section>
+
+            <!-- Courses list section -->
+            <section id="courses">
+                <h2>Core Courses</h2>
+                <ul class="course-list">
+                    <li>Data Structures &amp; Algorithms</li>
+                    <li>Database Management Systems</li>
+                    <li>Computer Networks &amp; Security</li>
+                    <li>Web &amp; Mobile Application Development</li>
+                    <li>Artificial Intelligence &amp; Machine Learning</li>
+                </ul>
+            </section>
+
+            <!-- IT lab image section -->
+            <section>
+                <h2>IT Laboratory</h2>
+                <figure class="lab-figure">
+                    <img 
+                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=600&fit=crop&auto=format" 
+                        alt="Modern IT laboratory with rows of computers, students collaborating, and large monitors."
+                    >
+                    <figcaption>Advanced IT laboratory — hands-on learning environment with high-performance workstations.</figcaption>
+                </figure>
+            </section>
+
+            <!-- Course table section -->
+            <section>
+                <h2>Course Details</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Course Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>IT101</td><td>Introduction to Programming</td></tr>
+                            <tr><td>IT201</td><td>Data Structures &amp; Algorithms</td></tr>
+                            <tr><td>IT301</td><td>Database Management Systems</td></tr>
+                            <tr><td>IT401</td><td>Computer Networks</td></tr>
+                            <tr><td>IT405</td><td>Web Development Frameworks</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Student enquiry form section -->
+            <section id="contact">
+                <h2>Student Enquiry</h2>
+                <div class="enquiry-form">
+                    <form action="#" method="post">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="e.g. Alex Johnson" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="alex@example.com" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Message / Query</label>
+                                <textarea id="message" name="message" placeholder="Ask about admissions, courses, or research opportunities..." required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">Send Enquiry</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER with quick links -->
+        <footer>
+            <div>© 2025 Department of Information Technology</div>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

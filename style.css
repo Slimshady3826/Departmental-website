@@ -1,0 +1,338 @@
+/* style.css */
+
+/* Basic styling for clarity and readability */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+    line-height: 1.6;
+    background-color: #f8faff;
+    color: #1a2b4c;
+    padding: 1.5rem;
+}
+
+/* Container to keep content tidy */
+.page-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 40px -12px rgba(0, 20, 60, 0.15);
+    padding: 2rem 2.5rem;
+    border: 1px solid #d9e2ef;
+}
+
+/* Header & nav */
+header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e2e9f2;
+    padding-bottom: 1.25rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #0b2d5c, #1f5e9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.dept-sub {
+    color: #3f5e7a;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-left: 4px solid #2b7fc1;
+    padding-left: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a3a5e;
+    padding: 0.4rem 0.1rem;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+    font-size: 1.05rem;
+}
+
+nav a:hover {
+    border-bottom-color: #1f6eb0;
+    color: #0b2d5c;
+}
+
+/* Main content spacing */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+/* Sections */
+section {
+    scroll-margin-top: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0b2d5c;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h2::before {
+    content: "▍";
+    font-size: 2rem;
+    color: #2b7fc1;
+    line-height: 1;
+}
+
+/* Paragraph description */
+.dept-description {
+    background: #f0f6fe;
+    padding: 1.5rem 2rem;
+    border-radius: 1.2rem;
+    font-size: 1.1rem;
+    color: #1f3b5a;
+    border: 1px solid #cddef5;
+    margin-top: 0.5rem;
+}
+
+/* Course list */
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    margin-top: 0.75rem;
+}
+
+.course-list li {
+    background: white;
+    padding: 0.9rem 1.5rem;
+    border-radius: 3rem;
+    border: 1px solid #b9d1ea;
+    box-shadow: 0 2px 6px rgba(0, 40, 80, 0.03);
+    font-weight: 500;
+    color: #14375c;
+    transition: all 0.15s;
+}
+
+.course-list li::before {
+    content: "📘 ";
+    font-size: 1.1rem;
+}
+
+.course-list li:hover {
+    background: #e5f0ff;
+    border-color: #2b7fc1;
+    transform: translateY(-2px);
+}
+
+/* Image figure */
+.lab-figure {
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 12px 24px -10px rgba(0, 30, 70, 0.2);
+    border: 1px solid #c6d9f0;
+}
+
+.lab-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 340px;
+    object-fit: cover;
+    background: #d9e6f5;
+}
+
+figcaption {
+    background: #eef4fc;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    color: #2a4d73;
+    font-style: italic;
+    border-top: 1px solid #c6d9f0;
+}
+
+/* Table styling */
+.table-container {
+    overflow-x: auto;
+    border-radius: 1.2rem;
+    border: 1px solid #d0dff0;
+    background: white;
+    margin-top: 0.75rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    min-width: 400px;
+}
+
+th {
+    background: #1f4b7a;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    letter-spacing: 0.3px;
+}
+
+td {
+    padding: 0.9rem 1.5rem;
+    border-bottom: 1px solid #e2eaf5;
+    color: #1e3c5e;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #f3f9ff;
+}
+
+/* Enquiry form */
+.enquiry-form {
+    background: #f4f9ff;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid #cde0f2;
+    margin-top: 0.75rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-weight: 600;
+    color: #1a3a5e;
+    font-size: 0.95rem;
+}
+
+input, textarea {
+    padding: 0.85rem 1.2rem;
+    border-radius: 0.9rem;
+    border: 1px solid #b8cee8;
+    font-family: inherit;
+    font-size: 1rem;
+    background: white;
+    transition: 0.2s;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #2b7fc1;
+    box-shadow: 0 0 0 4px rgba(43, 127, 193, 0.15);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background: #0b2d5c;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 0.5rem;
+    letter-spacing: 0.3px;
+    border: 1px solid #1f4b7a;
+    box-shadow: 0 6px 12px -6px rgba(0, 40, 80, 0.2);
+}
+
+button:hover {
+    background: #1f4b7a;
+    transform: scale(1.01);
+    box-shadow: 0 10px 18px -8px #0b2d5c;
+}
+
+/* Footer */
+footer {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #d9e2ef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #4a6a8a;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #1f5e9e;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #0b2d5c;
+}
+
+/* Responsive touches */
+@media (max-width: 700px) {
+    .page-wrapper {
+        padding: 1.5rem;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+    nav ul {
+        gap: 1.5rem;
+    }
+}
